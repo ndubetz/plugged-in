@@ -6,14 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ndubetz/plugged-in.git"
-  },
   "author": "Nate Dubetz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ndubetz/plugged-in/issues"
   },
-  "homepage": "https://github.com/ndubetz/plugged-in#readme"
+  "homepage": "https://github.com/ndubetz/plugged-in#readme",
+  "devDependencies": {
+    "newman": "^3.5.2"
+  }
 }
