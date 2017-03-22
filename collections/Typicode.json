@@ -1,0 +1,85 @@
+{
+	"id": "c84000fe-4ce9-23bc-46dd-5ffd5c50f0c2",
+	"name": "Typicode",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "38adda03-6f90-4e45-4416-4fc21614807a",
+			"name": "Schemas",
+			"description": "",
+			"order": [
+				"0b717a78-1b28-e81f-1a9d-3d4ee0cf3202",
+				"b87e7402-bd2a-9a97-f0cd-88d3019c91c1",
+				"e63e670e-da5c-cfe1-8b1c-5043b0ddd3f4"
+			],
+			"owner": "446852"
+		}
+	],
+	"timestamp": 1490189339474,
+	"owner": "446852",
+	"public": false,
+	"requests": [
+		{
+			"id": "0b717a78-1b28-e81f-1a9d-3d4ee0cf3202",
+			"headers": "",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var schema = {\n \"type\":\"object\",\n \"properties\": {\n\t\t\"userId\": {\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"id\": {\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"title\": {\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"body\": {\n\t\t\t\"type\": \"string\"\n\t\t}\n    },\n    \"required\": [\"userId\", \"id\", \"title\", \"body\"]\n};\nvar jsonData = JSON.parse(responseBody);\n\ntests[\"Post has valid schema\"] = tv4.validate(jsonData, schema);\n\nconsole.log(\"Validation failed: \", tv4.error);\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1490190391460,
+			"name": "Post has valid schema",
+			"description": "",
+			"collectionId": "c84000fe-4ce9-23bc-46dd-5ffd5c50f0c2",
+			"responses": [],
+			"folder": "38adda03-6f90-4e45-4416-4fc21614807a"
+		},
+		{
+			"id": "b87e7402-bd2a-9a97-f0cd-88d3019c91c1",
+			"headers": "",
+			"url": "https://jsonplaceholder.typicode.com/comments/1",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c84000fe-4ce9-23bc-46dd-5ffd5c50f0c2",
+			"data": null,
+			"dataMode": "params",
+			"name": "Comment has valid schema",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1490190859029,
+			"version": 2,
+			"responses": [],
+			"tests": "var schema = {\n \"type\":\"object\",\n \"properties\": {\n\t\t\"postId\": {\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"id\": {\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"name\": {\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"email\": {\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"body\": {\n\t\t\t\"type\": \"string\"\n\t\t}\n    },\n    \"required\": [\"postId\", \"id\", \"name\", \"email\", \"body\"]\n};\nvar jsonData = JSON.parse(responseBody);\n\ntests[\"Comment has valid schema\"] = tv4.validate(jsonData, schema);\n\nconsole.log(\"Validation failed: \", tv4.error);\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "38adda03-6f90-4e45-4416-4fc21614807a"
+		},
+		{
+			"id": "e63e670e-da5c-cfe1-8b1c-5043b0ddd3f4",
+			"headers": "",
+			"url": "https://jsonplaceholder.typicode.com/albums/1",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c84000fe-4ce9-23bc-46dd-5ffd5c50f0c2",
+			"data": null,
+			"dataMode": "params",
+			"name": "Album has valid schema",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1490191263074,
+			"version": 2,
+			"responses": [],
+			"tests": "var schema = {\n \"type\":\"object\",\n \"properties\": {\n\t\t\"userId\": {\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"id\": {\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"title\": {\n\t\t\t\"type\": \"string\"\n\t\t},\n    },\n    \"required\": [\"userId\", \"id\", \"title\"]\n};\nvar jsonData = JSON.parse(responseBody);\n\ntests[\"Album has valid schema\"] = tv4.validate(jsonData, schema);\n\nconsole.log(\"Validation failed: \", tv4.error);\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "38adda03-6f90-4e45-4416-4fc21614807a"
+		}
+	]
+}
