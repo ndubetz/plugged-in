@@ -2,13 +2,13 @@
 
 # Setup
 
-A somewhat recent version of node.js is required. 6 or later should be sufficient. 
+A recent version of node.js is required. Version 6 or later is sufficient. 
 
 Clone the repository and run `npm install`
 
 # Usage
 
-To run a collection on the `collections` directory, run `npm test [COLLECTION_NAME]`
+To run a collection from the `collections` directory, run `npm test [COLLECTION_NAME]`
 
 # Sample APIs
 
