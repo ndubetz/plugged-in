@@ -8,7 +8,7 @@ Clone the repository and run `npm install`
 
 # Usage
 
-To run a collection from the `collections` directory, run `npm test [COLLECTION_NAME]`
+To run a collection from the `collections` directory, run `npm test [COLLECTION_NAME]` without the `.json` file extension.
 
 # Sample APIs to use for testing
 
