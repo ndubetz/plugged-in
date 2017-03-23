@@ -10,9 +10,7 @@ Clone the repository and run `npm install`
 
 To run a collection from the `collections` directory, run `npm test [COLLECTION_NAME]`
 
-# Sample APIs
-
-Below is list of free APIs to use for testing:
+# Sample APIs to use for testing
 
 * https://reqres.in/
 
